@@ -1,6 +1,7 @@
 export default function Login() {
   return (
     <main className="container" style={{ maxWidth: "420px" }}>
+      <div className="card glow">
       <div className="card">
         <h2 className="h2">Login to SWAR</h2>
 
@@ -9,7 +10,7 @@ export default function Login() {
           className="button-primary"
           style={{ width: "100%", marginTop: "24px", textAlign: "center" }}
         >
-          🎙 Student (Voice Demo)
+          🎙 Enter Voice Space
         </a>
 
         <a
@@ -23,6 +24,7 @@ export default function Login() {
         <p className="p-muted" style={{ fontSize: "12px", marginTop: "16px" }}>
           Pilot Mode · No real student data stored
         </p>
+      </div>
       </div>
     </main>
   )
