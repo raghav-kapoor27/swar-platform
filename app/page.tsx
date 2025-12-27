@@ -1,51 +1,60 @@
 export default function Home() {
   return (
-    <main className="container">
-      <h1 className="h1 glow">
-        SWAR
-      </h1>
+    <div className="ai-stage">
+      <div className="ai-field" />
+      <div className="ai-noise" />
 
-      <p className="p-muted" style={{ marginTop: "24px" }}>
-        A voice-first AI platform that listens, understands,
-        and responds — designed for dignity, not judgment.
-      </p>
+      <main className="container">
+        <h1 className="h1">SWAR</h1>
 
-      <div style={{ marginTop: "48px", display: "flex", gap: "16px" }}>
-        <a href="/login" className="button-primary pulse">
-          Start Voice Demo
-        </a>
-        <a href="/login" className="button-secondary">
-          Teacher Dashboard
+        <p className="p-muted" style={{ marginTop: "28px" }}>
+          A voice-native AI system for education — built to listen first,
+          understand learning differences early, and support children
+          without labels or judgment.
+        </p>
+
+        <div style={{ marginTop: "48px", display: "flex", gap: "16px" }}>
+          <a href="/login" className="button-primary">
+            Start Voice Demo
           </a>
-      </div>
-
-      <div style={{
-        marginTop: "96px",
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-        gap: "24px"
-      }}>
-        <div className="card">
-          <h3 className="h2">Voice-First</h3>
-          <p className="p-muted">
-            No typing. Students learn and respond entirely through speech.
-          </p>
+          <a href="/login" className="button-secondary">
+            Teacher Dashboard
+          </a>
         </div>
 
-        <div className="card">
-          <h3 className="h2">Early Support</h3>
-          <p className="p-muted">
-            Detects signs of dyslexia and dyscalculia without labeling children.
-          </p>
-        </div>
+        <div
+          style={{
+            marginTop: "96px",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+            gap: "28px"
+          }}
+        >
+          <div className="card">
+            <h3 className="h2">Voice-First by Design</h3>
+            <p className="p-muted">
+              Students interact entirely through speech in their
+              mother tongue — no typing, no friction.
+            </p>
+          </div>
 
-        <div className="card">
-          <h3 className="h2">Built for Rural India</h3>
-          <p className="p-muted">
-            Works offline, supports Indian languages, and runs on low-end phones.
-          </p>
+          <div className="card">
+            <h3 className="h2">Early Learning Support</h3>
+            <p className="p-muted">
+              Detects patterns linked to dyslexia and dyscalculia
+              without scoring or diagnosing children.
+            </p>
+          </div>
+
+          <div className="card">
+            <h3 className="h2">Built for Rural Reality</h3>
+            <p className="p-muted">
+              Designed for low-end Android devices, offline-first,
+              and Indian classrooms.
+            </p>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
   )
 }
