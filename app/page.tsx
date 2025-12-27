@@ -1,28 +1,52 @@
 export default function Home() {
   return (
-    <main style={{
-      minHeight: "100vh",
-      background: "linear-gradient(135deg, #020617, #0f172a)",
-      color: "white",
-      padding: "80px"
-    }}>
-      <h1 style={{ fontSize: "48px", fontWeight: "700" }}>SWAR</h1>
-      <p style={{ maxWidth: "600px", marginTop: "20px", opacity: 0.8 }}>
-        A voice-first AI platform helping rural students learn in their mother tongue
-        and get early support for learning difficulties.
+    <main className="container">
+      <h1 className="h1">
+        SWAR
+      </h1>
+
+      <p className="p-muted" style={{ marginTop: "24px" }}>
+        SWAR is a voice-first AI platform that listens to students in their mother
+        tongue, detects early learning difficulties, and helps teachers respond
+        with dignity instead of labels.
       </p>
-      <a href="/login" style={{
-        display: "inline-block",
-        marginTop: "40px",
-        padding: "14px 24px",
-        background: "#f97316",
-        borderRadius: "12px",
-        color: "black",
-        fontWeight: "600",
-        textDecoration: "none"
+
+      <div style={{ marginTop: "48px", display: "flex", gap: "16px" }}>
+        <a href="/login" className="button-primary">
+          Start Demo
+        </a>
+        <a href="/login" className="button-secondary">
+          Teacher View
+        </a>
+      </div>
+
+      <div style={{
+        marginTop: "96px",
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+        gap: "24px"
       }}>
-        Start Demo
-      </a>
+        <div className="card">
+          <h3 className="h2">Voice-First</h3>
+          <p className="p-muted">
+            No typing. Students learn and respond entirely through speech.
+          </p>
+        </div>
+
+        <div className="card">
+          <h3 className="h2">Early Support</h3>
+          <p className="p-muted">
+            Detects signs of dyslexia and dyscalculia without labeling children.
+          </p>
+        </div>
+
+        <div className="card">
+          <h3 className="h2">Built for Rural India</h3>
+          <p className="p-muted">
+            Works offline, supports Indian languages, and runs on low-end phones.
+          </p>
+        </div>
+      </div>
     </main>
   )
 }
