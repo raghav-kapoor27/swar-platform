@@ -6,21 +6,13 @@ export default function Login() {
 
       <main className="container" style={{ maxWidth: "420px" }}>
         <div className="card">
-          <h2 className="h2">Enter SWAR</h2>
+          <h2 className="h2">Access SWAR</h2>
 
-          <a
-            href="/student"
-            className="button-primary"
-            style={{ marginTop: "24px", width: "100%", textAlign: "center" }}
-          >
+          <a href="/student" className="button-primary" style={{ marginTop: "24px", display: "block", textAlign: "center" }}>
             🎙 Student Voice Space
           </a>
 
-          <a
-            href="/teacher"
-            className="button-secondary"
-            style={{ marginTop: "16px", width: "100%", textAlign: "center" }}
-          >
+          <a href="/teacher" className="button-secondary" style={{ marginTop: "16px", display: "block", textAlign: "center" }}>
             👩‍🏫 Teacher Dashboard
           </a>
 
