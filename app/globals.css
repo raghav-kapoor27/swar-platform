@@ -66,3 +66,57 @@ body {
   color: var(--muted);
   max-width: 640px;
 }
+/* 🌌 Animated background */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  background-size: 400% 400%;
+  animation: gradientMove 20s ease infinite;
+}
+
+/* ✨ Floating cards */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+.card {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* 🔮 Soft glow */
+.glow {
+  position: relative;
+}
+
+.glow::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(
+    120deg,
+    rgba(56,189,248,0.6),
+    rgba(168,85,247,0.6),
+    rgba(245,158,11,0.6)
+  );
+  filter: blur(18px);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+/* 🎙 Pulse (AI / Voice feel) */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(245,158,11,0.6); }
+  70% { box-shadow: 0 0 0 20px rgba(245,158,11,0); }
+  100% { box-shadow: 0 0 0 0 rgba(245,158,11,0); }
+}
+
+.pulse {
+  animation: pulse 2.5s infinite;
+}
