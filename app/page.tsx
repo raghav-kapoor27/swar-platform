@@ -1,23 +1,22 @@
 export default function Home() {
   return (
     <main className="container">
-      <h1 className="h1">
+      <h1 className="h1 glow">
         SWAR
       </h1>
 
       <p className="p-muted" style={{ marginTop: "24px" }}>
-        SWAR is a voice-first AI platform that listens to students in their mother
-        tongue, detects early learning difficulties, and helps teachers respond
-        with dignity instead of labels.
+        A voice-first AI platform that listens, understands,
+        and responds — designed for dignity, not judgment.
       </p>
 
       <div style={{ marginTop: "48px", display: "flex", gap: "16px" }}>
-        <a href="/login" className="button-primary">
-          Start Demo
+        <a href="/login" className="button-primary pulse">
+          Start Voice Demo
         </a>
         <a href="/login" className="button-secondary">
-          Teacher View
-        </a>
+          Teacher Dashboard
+          </a>
       </div>
 
       <div style={{
