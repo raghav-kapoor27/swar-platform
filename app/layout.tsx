@@ -2,7 +2,7 @@ import "./globals.css"
 
 export const metadata = {
   title: "SWAR",
-  description: "Voice-first AI education platform for rural India"
+  description: "Voice-first AI system for inclusive education"
 }
 
 export default function RootLayout({
