@@ -1,0 +1,68 @@
+:root {
+  --bg: #020617;
+  --panel: rgba(255,255,255,0.06);
+  --border: rgba(255,255,255,0.12);
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #f59e0b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: radial-gradient(1200px 600px at 10% 10%, #0f172a, #020617);
+  color: var(--text);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  backdrop-filter: blur(12px);
+}
+
+.button-primary {
+  display: inline-block;
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+  color: #020617;
+  padding: 14px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.button-secondary {
+  display: inline-block;
+  border: 1px solid var(--border);
+  padding: 12px 20px;
+  border-radius: 12px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.h1 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.p-muted {
+  color: var(--muted);
+  max-width: 640px;
+}
